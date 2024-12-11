@@ -41,11 +41,11 @@ const Reservationbody = () => {
         }
       }
     } catch (error) {
-      toast.error((error || error.response.data.message),{autoClose:800})
+      toast.error(error.response?.data?.message || "An error occurred", { autoClose: 800 });
     }
   }
   return (
-    <div className='reservationmain' style={{background:`url(${bgimg})`}>
+    <div className='reservationmain' style={{background:`url(${bgimg})`}}>
       <div className="formdiv">
         <div className="reservehead"><h3>Enter Your Details</h3></div>
       <form onSubmit={HandleSubmit}>
