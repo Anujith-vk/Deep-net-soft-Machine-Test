@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+.menumain {
+    height: 311px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+  }
+  h2{
+    color: white;
+    font-family: Oswald;
+    font-size: 75px;
+    font-weight: 600;
+    text-shadow: 3px 2px 4px rgb(238, 41, 41);
+  }
+  .menudesc{
+    max-width: 620px;
+    text-align: center;
+    font-size: 18px;
+    color: #BBBBBB;
+    font-family: kelly slab;
+    padding: 10px;
+  }
+  .menusecond{
+    height: 79px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+ .menubutton{
+    width: 114px;
+    height: 50px;
+    border: 1px solid #0796EF;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Oswald;
+    cursor: pointer;
+  }
+ .menubutton:active{
+    background-color: #0796EF;
+  }
+ .menubutton:hover{
+    border: 2px solid #0796EF;
+  }
+ .menuthird{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height:auto;
+    width: 100%;
+ }
+ .menuthirdcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8%;
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+    padding:20px
+ }
+ .thirdtop{
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .thirdtop h3{
+    padding-bottom: 10px;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: Oswald;
+    color:white ;
+    text-shadow: 3px 2px 4px rgb(238, 41, 41);
+ }
+ .horizontalline {
+    max-width: 68px;
+    width: 100%;
+    height: 3px; 
+    background-color: white; 
+    border: none; 
+    color:#857878;
+    margin: 0 10px; 
+  }
+  .thirdlast{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   column-gap: 25px;
+    row-gap: 40px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+  }
+  .thirdcard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   max-width: 400px;
+   width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+  .thirdcard h4{
+    color:white;
+    font-size: 20px;
+    font-family: Oswald;
+  }
+  .thirdcard p{
+    color: #BBBBBB;
+    font-family: kelly slab;
+    font-size: 18px;
+    font-family: 400;
+  }
+  .menufourth{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    width: 100%;
+    background-color: black;
+  }
+  .detailcard,.detailcard1,.detailcard2{
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width:373px;
+    width: 100%;
+    height: 134px;
+    border: 1px solid #d9d9dd;
+    border-radius: 15px;
+  }
+  .detailcard,.detailcard1,.detailcard2 h5{
+    color: #0796EF;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Oswald;
+  }
+  .detailcard,.detailcard1,.detailcard2 p{
+    color: #857878;
+    font-family: Oswald;
+    font-size: 16px;
+  }
+  .imagecontent{
+    display: flex;
+    gap: 10px;
+  }
+  .addrcontainer{
+    width: 180px;
+    height: 50px;
+  }
+  .detailcard2first{
+  
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -37px;
+    background-color: black;
+  }
+  .logo2{
+    width: 86px;
+    height: 76px;
+    border-color: black;
+  }
+  .detailcard2second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+  .detailcard2second p{
+  font-size: 35px;
+  font-family: Oswald;
+  }
+  .detailcard2last{
+    margin-top: -10px;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  ul >li{
+    font-family: Oswald;
+    font-size: 16px;
+  }
+@media (max-width:768px) {
+  .menufourth{
+    flex-direction: column;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .detailcard1{
+    order: 1;
+  }
+  .detailcard{
+    order: 2;
+  }
+  .detailcard2{
+    order: 3;
+  }
+  .thirdtop{
+    text-align: center;
+  }
+  .thirdlast{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+  }
+}
+@media  (max-width:426px) {
+    .thirdtop{
+      font-size: 30px;
+      max-width: 300px;
+      width: 100%;
+      font-weight: 400;
+    }
+    .thirdcard{
+      max-width: 300px;
+      width: 100%;
+    }
+    .thirdcard h4{
+      font-size: 16px;
+    }
+    .thirdcard p{
+      font: size 14px; ;
+    }
+   .menubutton{
+      width: 72px;
+      height: 32px;
+    }
+    .menuthird{
+      width: 100%;
+    }
+    .menusecond{
+      width: 100%;
+    }
+    .menumain{
+      width: 100%;
+    }
+    .menufourth{
+      width: 100%;
+    }
+    .detailcard,.detailcard1,.detailcard2{
+      max-width: 361px;
+      height: 128px;
+      min-width: 310px;
+    }
+    .menuthirdcontent{
+      width: 310px;
+    }
+}
+
+@media (max-width:375px) {
+  .menuthirdcontent{
+    max-width: 250px;
+    width: 100%;
+  }
+  .detailcard,.detailcard1,.detailcard2{
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); 
+.reservationmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88.7vh;
+    width: 100%;
+    background-color: black;
+    background: url('D:\Machine Test\frontend\src\Assets\b6.jpg');
+}
+.formdiv{
+    margin: 20px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.reservehead{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+}
+.reservehead h3{
+    font-size: 30px;
+    font-family: Oswald;
+}
+form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 3%;
+    gap: 20px;
+}
+form input{
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: 1px solid;
+}
+.bookbutton{
+    border: 1px solid;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    font-family: Oswald;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.date{
+    padding-right: 10px
+}
