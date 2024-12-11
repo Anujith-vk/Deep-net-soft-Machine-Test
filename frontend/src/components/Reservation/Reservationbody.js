@@ -3,6 +3,7 @@ import './Reservationbody.css'
 import {toast,ToastContainer} from 'react-toastify'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import bgimg from '../../Assets/b6.jpg'
 const Reservationbody = () => {
   const navigate=useNavigate()
   const[data,setdata]=useState({
@@ -44,7 +45,7 @@ const Reservationbody = () => {
     }
   }
   return (
-    <div className='reservationmain'>
+    <div className='reservationmain' style={{background:`url(${bgimg})`}>
       <div className="formdiv">
         <div className="reservehead"><h3>Enter Your Details</h3></div>
       <form onSubmit={HandleSubmit}>
