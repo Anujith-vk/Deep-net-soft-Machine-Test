@@ -24,7 +24,7 @@ const Reservationbody = () => {
         toast.error("Plese Provide All The Feilds",{autoClose:800})
       }
       else{
-        const response=await axios.post('http://localhost:4000/table/reservation',{name,email,number,date})
+        const response=await axios.post('https://deep-net-soft-machine-test.onrender.com/table/reservation',{name,email,number,date})
         if(response)
         {
           toast.success(response.data.message,{autoClose:800})
