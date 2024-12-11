@@ -21,7 +21,7 @@ const[filter,setfilter]=useState('')
 
 const fetchdata=async function () {
   try {
-    const response=await axios.get('http://localhost:4000/products')
+    const response=await axios.get('https://deep-net-soft-machine-test.onrender.com/products')
     if(response)
     {
       const uniqueCategories = new Set(category);
