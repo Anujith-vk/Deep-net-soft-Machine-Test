@@ -22,7 +22,7 @@ const Addbody = () => {
         toast.error("Please Provide All the Feilds",{autoClose:800})
       }
       else{
-        const response= await axios.post('http://localhost:4000/addproduct',{category,name,description,price})
+        const response= await axios.post('https://deep-net-soft-machine-test.onrender.com/addproduct',{category,name,description,price})
         if(response)
         {
           toast.success(response.data.message,{autoClose:800})
